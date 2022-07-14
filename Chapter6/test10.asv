@@ -1,0 +1,24 @@
+%%
+clc; clear; close all;
+
+%%
+
+h = 0.001;
+
+beta1 = 150; beta2 = 1.0;
+kp = beta1; kd = beta2;
+
+alfa1 = 0.75; alfa2 = 1.5;
+delta = 2 * h;
+
+xk = zeros(2, 1);
+u_1 = 0;
+num = 1000;
+
+for i = 1 : num
+    time(i) = i * h;
+
+    p1 = u_1;
+    p2 = time(i);
+    
+end
